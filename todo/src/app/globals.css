@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #6592fd;
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  min-height: 48rem;
+  max-height: 100%;
+  width: 48rem;
+  padding: 3.2rem;
+  background-color: #fff;
+}
+
+.form-container form {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.form-container input {
+  flex: 2;
+  font-size: 1.6rem;
+  line-height: calc(1.6rem * 1.2);
+  padding: 1.6rem;
+}
+
+.form-container button {
+  flex: 1;
+  cursor: pointer;
+  color: #fff;
+  background-color: #5f59f7;
+  border: 0;
+  font-size: 1.6rem;
+  line-height: calc(1.6rem * 1.2);
+  outline: 0;
+}
+
+.form-container button:hover {
+  background-color: #44c2fd;
+}
+
+.form-container input,
+.form-container button {
+  height: 4rem;
+}
+
+.todo-container {
+  max-height: 48rem;
+  margin-top: 3.2rem;
+  overflow-y: auto;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.todo-item:not(:first-child) {
+  margin-top: 1.6rem;
+}
+
+.todo-item .delete {
+  margin-left: auto;
+  color: #ed5e68;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: calc(1.6rem * 1.2);
+}
+
+.todo-item span {
+  font-size: 1.6rem;
+  line-height: calc(1.6rem * 1.2);
+  max-width: 90%;
+  word-wrap: break-word;
+}
