@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #87ceeb;
+}
+
+.container {
+  width: 100rem;
+  margin: 16rem auto 0;
+  background-color: #fff;
+  padding: 6rem;
+}
+
+.balance-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.balance-item {
+  padding: 1.6rem 3.2rem;
+  border-radius: 1.2rem;
+}
+
+.balance-item:first-child {
+  background-color: #71efcd;
+}
+
+.balance-item:nth-child(2) {
+  background-color: #e3e0f3;
+}
+
+.balance-item:last-child {
+  background-color: #cccdff;
+}
+
+.balance-item span {
+  display: block;
+}
+
+.balance-item .balance-title {
+  font-size: 1.6rem;
+  line-height: calc(1.6rem * 1.2);
+  margin-bottom: 0.4rem;
+}
+
+.balance-item .balance-amount {
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+  font-weight: 600;
+}
+
+.transaction-history-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction-history-container > div {
+  border: 1.5px solid #000;
+  padding: 2rem;
+  border-radius: 1.2rem;
+}
+
+.transaction-container {
+  width: calc(35% - 1.6rem);
+}
+
+.history-container {
+  width: calc(65% - 1.6rem);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  line-height: calc(2.5rem * 1.2);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.form-item {
+  margin-bottom: 1.6rem;
+}
+
+.form-item label {
+  display: block;
+  font-size: 1.4rem;
+  line-height: calc(1.4rem * 1.2);
+  margin-bottom: 0.4rem;
+}
+
+.form-item input {
+  height: 4rem;
+  width: 100%;
+  padding: 1.2rem;
+}
+
+.transaction-option {
+  display: block;
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+.transaction-option option {
+  background-color: #fff;
+  color: #000;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background-color: #00c6cf;
+  font-size: 1.4rem;
+  line-height: calc(1.4rem * 1.2);
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #7fd1ae;
+}
+
+.history-record-container {
+  border: 1px solid #000;
+  padding: 1.6rem;
+}
+
+.history-head,
+.history-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.history-head span,
+.history-item span {
+  font-size: 1.4rem;
+  line-height: calc(1.4rem * 1.2);
+  font-weight: 500;
+  flex: 1;
+}
+
+.history-item {
+  border-top: .5px solid #000;
+  padding: .8rem 0;
+  margin-top: .8rem;
+}
+
+.history-item:last-child {
+  padding-bottom: 0;
+}
+
+.history-item span {
+  font-weight: 400;
+}
